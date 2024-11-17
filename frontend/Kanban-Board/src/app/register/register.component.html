@@ -1,0 +1,104 @@
+<section class="vh-100" style="background-color: #eee;">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-1" id="register">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+
+                <form class="mx-1 mx-md-4" [formGroup]="registerForm">
+
+        
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" id="form3Example1c" placeholder="Fullname" formControlName="name" name="name"
+                        class="form-control" /> <br>  
+                          
+                    </div>
+                    <!-- <small class="text-danger" *ngIf="registerForm.controls['name'].dirty && 
+                      registerForm.hasError('required','name')" style="color: red;margin-top: 0%;">*Name is required</small> -->
+                      
+                    <small class="text-danger" *ngIf="!registerForm.controls['name'].valid && 
+                    registerForm.controls['name']?.touched" style="color: red;">*Name is required</small>
+                  </div>
+                 
+                  
+                  <div class="mb-3">
+                    <p style="margin-left: 20px;">Select gender : &nbsp;&nbsp;
+                      <input type="radio" formControlName="gender" name="gender" value="male" checked
+                        style="width: 5%;">Male &nbsp;&nbsp;
+                      <input type="radio" formControlName="gender" name="gender" value="female" checked
+                        style="width: 5%;">Female &nbsp;&nbsp;
+                      <input type="radio" formControlName="gender" name="gender" value="other" checked
+                        style="width: 5%;">Other
+                    </p>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="email" id="form3Example3c" formControlName="email" placeholder="Email address"
+                        name="email" class="form-control"
+                        pattern="[a-z0-9._%+-]+@gmail.com" />
+                      
+                    </div>
+                    <small class="text-danger" *ngIf="!registerForm.controls['email'].valid && 
+                    registerForm.controls['email']?.touched" style="color: red;">*Email is required</small>
+                  </div>
+
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="form3Example4c" formControlName="password" placeholder="Password"
+                        name="password" class="form-control" />
+                      <label class="form-label" for="form3Example4c"></label>
+                    </div>
+                    <small class="text-danger" *ngIf="!registerForm.controls['password'].valid && 
+                    registerForm.controls['password']?.touched" style="color: red;">*password is required</small>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4" style="margin-bottom: 0;">
+                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="form3Example4c" formControlName="repeatPassword"
+                        placeholder="Confirm password" name="repeatPassword" class="form-control" />
+                      <label class="form-label" for="form3Example4c"></label>
+                    </div>
+                  </div>
+
+                  <div class="form-check d-flex justify-content-center mb-5">
+                    <p class="mb-5 pb-lg-2" style="color: #393f81;" id="button2"> Already have an account? <a href="#!" routerLink="/login"
+                        style="color: #393f81; ">Login here</a></p>
+                  </div>
+
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <button type="button" class="btn btn-primary btn-lg" id="button"
+                      (click)="register()" [disabled]="!registerForm.valid">Register</button>
+                  </div>
+
+                </form>
+
+
+              </div>
+              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+                <div class="center">
+            
+              <img src="./assets/kanbanlogo.jpg" style="width: 250px; height: 60px;  margin-top: -150px;">
+              <img src="./assets/kanban.svg" style="width: 35rem; height: 25rem; margin-top: -40px;" >
+              
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

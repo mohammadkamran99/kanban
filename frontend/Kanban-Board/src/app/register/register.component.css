@@ -1,0 +1,203 @@
+#register{
+ 
+  background: linear-gradient(90deg, rgb(210, 218, 216) 10%,rgb(221, 163, 173), rgb(114, 16, 16) 300%,blue 80%,rgb(8, 0, 8) 40%);
+  line-height: 10%;
+}
+#button2{
+  background: linear-gradient(90deg, rgb(218, 210, 216) 10%,rgb(221, 163, 173), rgb(114, 16, 16) 300%,rgb(8, 0, 8) 40%);
+  
+}
+
+img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  
+.center {
+    text-align: center;
+    padding: 60px;
+  }
+  
+  #MonValley #BrightDoor {
+    transition: all 0.3s ease-in-out;
+    opacity:0;
+  }
+  
+  #MonValley:hover #BrightDoor {
+    opacity:1;
+    
+  }
+  #MonValley #Step1 {
+    transition: all .65s ease-in-out;
+    transform: translate(0px, 132px);
+  }
+  #MonValley:hover #Step1 {
+    transform: translate(0px, 0px);
+  }
+  
+  #MonValley #Step2 {
+    transition: all .6s ease-in-out;
+    transform: translate(0px, 132px);
+  }
+  #MonValley:hover #Step2 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step3 {
+    transition: all .55s ease-in-out;
+    transform: translate(0px, 132px);
+  }
+  #MonValley:hover #Step3 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step4 {
+    transition: all .5s ease-in-out;
+    transform: translate(0px, 132px);
+  }
+  #MonValley:hover #Step4 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step5 {
+    transition: all .45s ease-in-out;
+    transform: translate(0px, 132px);
+  }
+  #MonValley:hover #Step5 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step6 {
+    transition: all .4s ease-in-out;
+    transform: translate(0px, 132px);
+  }
+  #MonValley:hover #Step6 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step7 {
+    transition: all .35s ease-in-out;
+    transform: translate(0px, 132px);
+  }
+  #MonValley:hover #Step7 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step8 {
+    transition: all .3s ease-in-out;
+    transform: translate(0px, 132px);
+  }
+  #MonValley:hover #Step8 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step9 {
+    transition: all .25s ease-in-out;
+    transform: translate(0px, 132px);
+  }
+  #MonValley:hover #Step9 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step10 {
+    transition: all .2s ease-in-out;
+    transform: translate(0px, 132px);
+  }
+  #MonValley:hover #Step10 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step11 {
+    transition: all .15s ease-in-out;
+    transform: translate(0px, 132px);
+  }
+  #MonValley:hover #Step11 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step12 {
+    transition: all .1s ease-in-out;
+    transform: translate(0px, 132px);
+  }
+  #MonValley:hover #Step12 {
+    transform: translate(0px, 0px);
+  }
+  #MonValley #Step13 {
+    transition: all .05s ease-in-out;
+    transform: translate(0px, 132px);
+  }
+  #MonValley:hover #Step13 {
+    transform: translate(0px, 0px);
+  }
+
+/*  button */
+
+  
+#button {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #322483;
+background: linear-gradient(90deg, rgb(31, 47, 119) 0%, rgb(98, 121, 223) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(17, 17, 17, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #1c1d1d;
+  box-shadow: 0 0 60px rgba(13, 14, 13, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+#button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+

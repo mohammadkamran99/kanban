@@ -1,0 +1,102 @@
+.example-card {
+  max-width: 80%;
+  border-radius:30px ;
+  background-color: rgb(245, 240, 245) ;
+  
+}
+.bg-img{
+  background-image: url("src\assets\02.jpg"); 
+  min-height: 100%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin-top: -11px;
+}
+.clear{
+  background: linear-gradient(45deg,#a16244,#ce80b1c5, #96bdb4);
+   width: 70px;
+   border-radius: 10px;
+   border: #bcf0b5;
+   margin-top: 5%;
+   font-size: large;
+   margin-left: 80%;
+   height: 40px;
+}
+#glow-on-hover{
+ margin-top: 5px;
+ width: 150px;
+ height: 40px;
+ border: none;
+ outline: none;
+ color: #fff;
+ background: rgb(7, 14, 4);
+ cursor: pointer;
+ position: relative;
+ z-index: 0;
+ border-radius: 10px;
+}
+
+#glow-on-hover:before {
+ content: '';
+ background: linear-gradient(45deg, #f8d9d9, #ebaf7e, #bdba1e, #48ff00, #16ddbc, #262627, #ff0095, #ff00c8, #ff0000);
+ position: absolute;
+ top: -2px;
+ left:-2px;
+ background-size: 400%;
+ z-index: -1;
+ filter: blur(5px);
+ width: calc(100% + 4px);
+ height: calc(100% + 4px);
+ animation: glowing 20s linear infinite;
+ opacity: 0;
+ transition: opacity .3s ease-in-out;
+ border-radius: 10px;
+}
+#glow-on-hover:after {
+ z-index: -1;
+ content: '';
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ /* background: rgba(210, 125, 218, 0.555); */
+ background: linear-gradient(45deg,#ca6b3f,#7dadbbc5, #96bdb4);
+ left: 0;
+ top: 0;
+ border-radius: 10px;
+}
+
+#glow-on-hover:active {
+ color: #000
+}
+
+#glow-on-hover:active:after {
+ background: transparent;
+}
+
+#glow-on-hover:hover:before {
+ opacity: 1;
+}
+
+
+/* .card-header{
+ color: black;
+ text-align: center;
+ background-color: rgb(224, 224, 221);
+}
+
+.card{
+ text-align: center;
+ width:50rem;
+ margin-left: 7rem;
+}
+
+
+.mat-accordion{
+
+} */
+
+
+
+
+
